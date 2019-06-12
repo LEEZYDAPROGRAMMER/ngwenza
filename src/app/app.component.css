@@ -1,0 +1,202 @@
+
+.mainLogo
+{
+    position: relative;
+    top: -0px;
+    left:-0px;
+
+}
+.mainLogo:hover
+{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+
+}
+
+.logo
+{
+    position: relative;
+    top: -220px;
+    left: -900px;
+    cursor: pointer;
+}
+.logo:hover
+{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+
+}
+@keyframes shake 
+{
+    10%, 90% 
+    {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% 
+    {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% 
+    {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}
+.title
+{
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 60px;
+    font-family: "Lucida Console";
+    color: #3498db;
+}
+.mytolist
+{
+   
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "Lucida Console";
+     cursor: no-drop;
+    left:-600px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    color: #3498db; 
+    top: 50px;
+}
+.addButton
+{
+    border: 1px solid #774F33;
+    background :#774F33;
+
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "Lucida Console";
+    cursor: pointer;
+    margin: 10px;
+
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    color: #fff; 
+
+}
+.addButton:hover
+{
+  color:rgb(0, 160, 252);   
+    
+}
+.addBox
+{
+    border: 2px solid #774F33;
+    border-radius: 25px;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "Lucida Console";
+    cursor:text;
+    margin: 10px;
+   outline: none;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    color: #3498db;
+}
+.addBox:focus {
+    background-color: #fff;
+    color: #3498db;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #3498db 2px;
+    padding: 3px 10px;
+  }
+.edBox
+{
+    border: 2px solid #774F33;
+    outline: none;
+    border-radius: 25px;
+    background: none;
+    padding: 10px 20px;
+    font-size: 8px;
+    font-family: "Lucida Console";
+    cursor:text;
+    margin: 10px;
+
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    color: #3498db
+
+}
+.edBox:focus {
+    background-color: #fff;
+    color: #3498db;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #3498db 2px;
+    padding: 3px 10px;
+  }
+.ed
+{
+    border: 1px solid #774F33;
+    background :#774F33;
+
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: "Lucida Console";
+    cursor: pointer;
+    margin: 10px;
+
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    color: #fff; 
+
+
+}
+.del
+{
+    border: 1px solid #774F33;
+    background :#774F33;
+
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: "Lucida Console";
+    cursor: no-drop;
+    margin: 10px;
+
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    color: #fff; 
+
+
+}
+.textCool
+{
+    font-size: 20px;
+    font-family: "Lucida Console";
+    color: #3498db;
+
+}
+
+.theListItems
+{
+  left:-100;
+}

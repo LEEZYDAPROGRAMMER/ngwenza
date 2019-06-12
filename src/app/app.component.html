@@ -1,0 +1,42 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="main" style="text-align:center" class="title">
+   <h1  class="title">
+      {{ title }}
+   </h1>
+   <img src="assets\img\hourglass (3).png" class="mainLogo">
+ 
+  <a href="http://localhost:4200/"> <img src="assets\img\hourglass (4).png" class="logo"> </a>
+ 
+  
+   <p>
+ 
+ 
+   </p>
+ 
+ <ul *ngFor="let todos of toDo" class="mytolist" >
+    <p class="theListItems"> 
+     {{ todos.name }}
+     {{ todos.time }}
+    </p>
+     <p>
+        Name: <input [(ngModel)]="editedName" class="edBox" />  Time: <input [(ngModel)]="editedTime" class="edBox" /> <button (click)="edit(todos,editedName,editedTime)" class="ed">Edit</button> 
+        <button (click)="delete(todos)" class="del">Delete</button>
+     </p>
+   
+ </ul>
+ 
+ <p  class="textCool">
+   Name:
+   <input [(ngModel)]="newToDoName" class="addBox" /><br/>
+   Time: <input [(ngModel)]="newToDoTime" class="addBox" />
+ </p>
+ 
+  <p>
+  <button (click)="addToDo()" class="addButton" >Add ToDo</button>
+   <a href="https://online.computicket.com/web/all/"><img src="assets\img\calendar.png" class="eventPic"></a>
+  </p>
+ <form>
+ 
+ </form>
+ </div>
